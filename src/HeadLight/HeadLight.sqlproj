@@ -65,6 +65,7 @@
     <Folder Include="Security\Roles" />
     <Folder Include="Programmability\Stored Procedures" />
     <Folder Include="Security\Roles\Database Roles" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <None Include="HeadLight.Local.Publish.publish.xml" />
@@ -82,5 +83,25 @@
     <Build Include="Programmability\Stored Procedures\RetrieveUserByEmail.sql" />
     <Build Include="Programmability\Stored Procedures\RetrieveUserByLogin.sql" />
     <Build Include="Programmability\Stored Procedures\RetrieveUserByUserId.sql" />
+    <Build Include="Tables\UserGroup.sql" />
+    <Build Include="Tables\JoinType.sql" />
+    <Build Include="Tables\Membership.sql" />
+    <Build Include="Programmability\Stored Procedures\CreateMembership.sql" />
+    <Build Include="Programmability\Stored Procedures\CreateUserGroup.sql" />
+    <Build Include="Programmability\Stored Procedures\DeleteMembership.sql" />
+    <Build Include="Programmability\Stored Procedures\DeleteUserGroup.sql" />
+    <Build Include="Programmability\Stored Procedures\RetrieveMembershipsByUserGroupId.sql" />
+    <Build Include="Programmability\Stored Procedures\RetrieveMembershipsByUserId.sql" />
+    <Build Include="Programmability\Stored Procedures\RetrieveUserGroupByFullName.sql" />
+    <Build Include="Programmability\Stored Procedures\RetrieveUserGroupByShortName.sql" />
+    <Build Include="Programmability\Stored Procedures\RetrieveUserGroupByUserGroupId.sql" />
+    <Build Include="Programmability\Stored Procedures\RetrieveUserGroupsByJoinType.sql" />
+    <Build Include="Programmability\Stored Procedures\UpdateMembership.sql" />
+    <Build Include="Programmability\Stored Procedures\UpdateUserGroup.sql" />
+    <Build Include="Programmability\Stored Procedures\RetrieveUserGroup.sql" />
+    <Build Include="Programmability\Stored Procedures\RetrieveMembershipByMembershipId.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>
