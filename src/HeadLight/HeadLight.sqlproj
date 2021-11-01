@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="HeadLight.Local.Publish.publish.xml" />
+    <None Include="HeadLight.Azure.Publish.publish.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\User.sql" />
@@ -100,6 +101,20 @@
     <Build Include="Programmability\Stored Procedures\UpdateUserGroup.sql" />
     <Build Include="Programmability\Stored Procedures\RetrieveUserGroup.sql" />
     <Build Include="Programmability\Stored Procedures\RetrieveMembershipByMembershipId.sql" />
+    <Build Include="Tables\Role.sql" />
+    <Build Include="Tables\Right.sql" />
+    <Build Include="Tables\RoleRight.sql" />
+    <Build Include="Tables\MembershipRole.sql" />
+    <Build Include="Programmability\Stored Procedures\CreateMembershipRole.sql" />
+    <Build Include="Programmability\Stored Procedures\CreateRole.sql" />
+    <Build Include="Programmability\Stored Procedures\RetrieveRolesByUserGroupId.sql" />
+    <Build Include="Programmability\Stored Procedures\DeleteRole.sql" />
+    <Build Include="Programmability\Stored Procedures\UpdateRole.sql" />
+    <Build Include="Programmability\Stored Procedures\RetrieveRoleByRoleId.sql" />
+    <Build Include="Programmability\Stored Procedures\RetrieveRightsByRoleId.sql" />
+    <Build Include="Programmability\Stored Procedures\UpdateRoleRight.sql" />
+    <Build Include="Programmability\Stored Procedures\DeleteMembershipRole.sql" />
+    <Build Include="Programmability\Stored Procedures\RetrieveMembershipRolesByRoleId.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />

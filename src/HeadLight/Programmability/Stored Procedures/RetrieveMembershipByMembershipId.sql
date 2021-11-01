@@ -10,14 +10,19 @@ BEGIN
 	WHERE [Id] = @membershipId;
 
 	SELECT
-		[Id],
-		[UserId], 
-		[UserGroupId], 
-		[IsActive], 
-		[IsCurrent], 
-		[IsPrimary],
-		[SlackMemberId]
+		M.[Id],
+		M.[UserId], 
+		M.[UserGroupId], 
+		M.[IsActive], 
+		M.[IsCurrent], 
+		M.[IsPrimary],
+		M.[SlackMemberId],
+		U.[DisplayName],
+		U.[GivenName],
+		U.[SurName]
 	FROM [dbo].[Membership] M
+		INNER JOIN [dbo].[User] U
+			ON M.[UserId] = U.[Id]
 	WHERE M.[Id] = @membershipId;
 
 END
