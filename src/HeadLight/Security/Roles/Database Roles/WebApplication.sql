@@ -52,6 +52,9 @@ GO
 GRANT EXECUTE ON [dbo].[RetrieveMembershipsByUserId] TO [WebApplication];
 GO
 
+GRANT EXECUTE ON [dbo].[RetrieveRightByRightIdUserId] TO [WebApplication];
+GO
+
 GRANT EXECUTE ON [dbo].[RetrieveRightsByRoleId] TO [WebApplication];
 GO
 

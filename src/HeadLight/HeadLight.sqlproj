@@ -68,10 +68,6 @@
     <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="HeadLight.Local.Publish.publish.xml" />
-    <None Include="HeadLight.Azure.Publish.publish.publish.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <Build Include="Tables\User.sql" />
     <Build Include="Security\Roles\Database Roles\WebApplication.sql" />
     <Build Include="Programmability\Stored Procedures\CreateLogin.sql" />
@@ -115,6 +111,7 @@
     <Build Include="Programmability\Stored Procedures\UpdateRoleRight.sql" />
     <Build Include="Programmability\Stored Procedures\DeleteMembershipRole.sql" />
     <Build Include="Programmability\Stored Procedures\RetrieveMembershipRolesByRoleId.sql" />
+    <Build Include="Programmability\Stored Procedures\RetrieveRightByRightIdUserId.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
