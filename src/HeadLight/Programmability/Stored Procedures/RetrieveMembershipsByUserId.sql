@@ -17,8 +17,13 @@ BEGIN
 		M.[IsActive],
 		M.[IsCurrent],
 		M.[IsPrimary],
-		M.[SlackMemberId]
+		M.[SlackMemberId],
+		U.[DisplayName],
+		U.[GivenName],
+		U.[SurName]
 	FROM [dbo].[Membership] M
+		INNER JOIN [dbo].[User] U
+			ON M.[UserId] = U.[Id]
 	WHERE M.[UserId] = @userId;
 
 END
